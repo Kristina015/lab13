@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Почтар Крістіна, ПП-22</title>
+</head>
+<body>
+    <h2>Планети Сонячної системи</h2>
+
+    <script>
+        "use strict";
+
+        
+        function showPlanet(name, size, color) {
+            let p = document.createElement("p");
+            p.textContent = name;
+            p.style.fontSize = size;
+            p.style.color = color;
+            document.body.appendChild(p);
+        }
+
+       
+        showPlanet("Меркурій", "18px", "gray");
+        showPlanet("Венера", "20px", "goldenrod");
+        showPlanet("Земля", "22px", "blue");
+        showPlanet("Марс", "20px", "red");
+        showPlanet("Юпітер", "26px", "sienna");
+        showPlanet("Сатурн", "24px", "khaki");
+        showPlanet("Уран", "22px", "turquoise");
+        showPlanet("Нептун", "22px", "navy");
+
+    </script>
+
+</body>
+</html>

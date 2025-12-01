@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Почтар Крістіна, ПП-22</title>
+	</head>	
+	<body>
+		<script>
+			function mean() {
+				if (arguments.length > 3) { 
+					alert("Аргументів більше, ніж потрібно");
+				}
+
+				var result = 0;
+				for (var i = 0; i < arguments.length; i++) { 
+					result += arguments[i];
+				}
+				return result / arguments.length;
+			}
+
+			document.write("Середній бал за перший семестр: ", mean(8, 10), "<br>");
+			document.write("Середній бал за другий семестр: ", mean(9, 7, 10), "<br>");
+			document.write("Середній бал за третій семестр: ", mean(6, 8, 9, 10));
+		</script>
+	</body>
+</html>
