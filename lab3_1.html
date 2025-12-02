@@ -2,34 +2,25 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Почтар Крістіна, ПП-22</title>
+    <title>Дні тижня в кольорах веселки</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2>Планети Сонячної системи</h2>
+<script>
+"use strict";
 
-    <script>
-        "use strict";
+function weekDay(dayIndex, color) {
+    const days = ["Понеділок", "Вівторок", "Середа", "Четвер", "П’ятниця", "Субота", "Неділя"];
+    document.write(`<p style="font-size:20pt; color:${color}">${days[dayIndex]}</p>`);
+}
 
-        
-        function showPlanet(name, size, color) {
-            let p = document.createElement("p");
-            p.textContent = name;
-            p.style.fontSize = size;
-            p.style.color = color;
-            document.body.appendChild(p);
-        }
+// Кольори веселки
+const rainbowColors = ["#FF0000", "#FF7F00", "#FFFF00", "#00FF00", "#0000FF", "#4B0082", "#9400D3"];
 
-       
-        showPlanet("Меркурій", "18px", "gray");
-        showPlanet("Венера", "20px", "goldenrod");
-        showPlanet("Земля", "22px", "blue");
-        showPlanet("Марс", "20px", "red");
-        showPlanet("Юпітер", "26px", "sienna");
-        showPlanet("Сатурн", "24px", "khaki");
-        showPlanet("Уран", "22px", "turquoise");
-        showPlanet("Нептун", "22px", "navy");
-
-    </script>
-
+// Виводимо дні з кольорами
+for (let i = 0; i < 7; i++) {
+    weekDay(i, rainbowColors[i]);
+}
+</script>
 </body>
 </html>
